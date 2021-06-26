@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "angkringan",
-    "slug": "angkringan",
+    "name": "online-android-emulator-",
+    "slug": "snack-118abaa6-f2f9-4925-a9cf-f4109723215b",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,6 +27,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "online android emulator "
   }
 }
