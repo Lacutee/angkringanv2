@@ -9,13 +9,13 @@ const BottomBar = () =>{
       // Try setting `flexDirection` to `"row"`.
       flexDirection: "row"
     }]}>
-      <View style={{ flex: 2, backgroundColor: "white" }}>
+      <View style={{ flex: 2, backgroundColor: "rgba(104, 104, 104, 1)" }}>
           <HomeLogo/>
       </View>
-      <View style={{ flex: 2, backgroundColor: "white" }}>
+      <View style={{ flex: 2, backgroundColor: "rgba(104, 104, 104, 1)" }}>
           <EditLogo/>
       </View>
-      <View style={{ flex: 2, backgroundColor: "white" }}>
+      <View style={{ flex: 2, backgroundColor: "rgba(104, 104, 104, 1)" }}>
           <SettingLogo/>
       </View>
 
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 0,
-    elevation: 15,
+    elevation: 20,
 
   },
 });

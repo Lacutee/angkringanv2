@@ -14,7 +14,7 @@ const Flex = () => {
           <Header/>
       </View>
 
-      <View style={{ flex: 9, backgroundColor: "white" }}>
+      <View style={{ flex: 9, backgroundColor: "rgba(90, 90, 90, 1)" }}>
           <HomeItem/>
       </View>
 
@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
   },
   header:{
       flex: 4,
+      backgroundColor:"rgba(90, 90, 90, 1)"
 
  },
 });
