@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { SafeAreaView, View, StyleSheet, Text, ScrollView,FlatList,Image } from 'react-native';
+import { SafeAreaView, View, StyleSheet, Text, ScrollView,FlatList,Image, TouchableOpacity } from 'react-native';
 
 export default function HomeItem(){
 const [items, setItems] = useState([
@@ -12,11 +12,13 @@ const [items, setItems] = useState([
 
 return (
     <View style={styles.container}>
+
         <FlatList
             numColumns={2}
             keyExtractor={(item) => item.key}
             data={items}
             renderItem={({item}) => (
+              <TouchableOpacity>
               <View style={styles.item}>
                 <View style={{flex:3, overflow:"hidden"}}>
                   <Image
@@ -30,8 +32,9 @@ return (
                   <Text style={styles.subtitle}>Rp. {item.harga}</Text>
 
                 </View>
-              </View>
 
+              </View>
+              </TouchableOpacity>
             )}
         />
 

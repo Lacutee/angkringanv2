@@ -3,19 +3,28 @@ import { StyleSheet, Text, View } from "react-native";
 
 const HeaderItem = () =>{
   return(
-        <View>
-            <Text style={styles.fontStyle}>Rp 120.000</Text>
+        <View style={{flex:1,
+                      flexDirection:'row',
+                      justifyContent: 'center',
+                      alignItems: 'center'}}>
+            <Text style={styles.first}>Rp </Text>
+            <Text style={styles.last}>120.000</Text>
         </View>
   );
 };
 
 const styles = StyleSheet.create({
-    fontStyle:{
-      fontSize: 20,
-      fontFamily: 'Segoe UI Black',
-      fontWeight: "900",
-
-
+    first:{
+      fontSize: 40,
+      fontFamily: 'Roboto',
+      fontWeight: "bold",
+      color:'white'
+    },
+    last:{
+      fontSize: 40,
+      fontFamily: 'Roboto',
+      fontWeight: "100",
+      color:'white'
     }
 });
 

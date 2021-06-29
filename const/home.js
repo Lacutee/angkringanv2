@@ -1,7 +1,6 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import Header from './header';
-import BottomBar from './bottombar';
 import HomeItem from './homeItem';
 
 const Flex = () => {
@@ -9,19 +8,15 @@ const Flex = () => {
     <View style={[styles.container, {
       // Try setting `flexDirection` to `"row"`.
       flexDirection: "column"
+
     }]}>
       <View style={[styles.header]} >
           <Header/>
       </View>
 
-      <View style={{ flex: 9, backgroundColor: "rgba(90, 90, 90, 1)" }}>
+      <View style={{ flex: 6, backgroundColor: "rgba(90, 90, 90, 1)" }}>
           <HomeItem/>
       </View>
-
-      <View style={{ flex: 2, backgroundColor: "white" }}>
-          <BottomBar/>
-      </View>
-
     </View>
   );
 };
@@ -32,7 +27,7 @@ const styles = StyleSheet.create({
     padding: 0,
   },
   header:{
-      flex: 4,
+      flex: 5,
       backgroundColor:"rgba(90, 90, 90, 1)"
 
  },

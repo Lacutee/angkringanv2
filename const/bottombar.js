@@ -1,23 +1,14 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import HomeLogo, {EditLogo,SettingLogo} from './bottomLogo';
 
 
 const BottomBar = () =>{
   return(
-    <View style={[styles.container, {
-      // Try setting `flexDirection` to `"row"`.
-      flexDirection: "row"
-    }]}>
-      <View style={{ flex: 2, backgroundColor: "rgba(104, 104, 104, 1)" }}>
+    <View style={styles.container}>
           <HomeLogo/>
-      </View>
-      <View style={{ flex: 2, backgroundColor: "rgba(104, 104, 104, 1)" }}>
           <EditLogo/>
-      </View>
-      <View style={{ flex: 2, backgroundColor: "rgba(104, 104, 104, 1)" }}>
           <SettingLogo/>
-      </View>
 
     </View>
   );
@@ -26,9 +17,10 @@ const BottomBar = () =>{
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    padding: 0,
+    paddingTop: 20,
+    paddingBottom: 20,
     elevation: 20,
+    flexDirection: "row",
 
   },
 });
